@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.display {
+    background-color: rgb(1, 8, 0);
+    margin-left: -10px;
+    position: relative;
+    top: 75px;
+    height: 400px;
+}
+
+.banner {
+    position: relative;
+    transform: translate(-50%, -50%);
+    filter: saturate(300%);
+    top: 50%;
+    left: 50%;
+}
+
+.phonehead {
+    font-family: 'Parkinsans';
+    position: relative;
+    top: 100px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.phoneinfo {
+    font-family: 'Parkinsans';
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 30px;
+    padding: 75px;
+}

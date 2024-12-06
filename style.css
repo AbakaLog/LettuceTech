@@ -1,27 +1,89 @@
 body {
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.homerow {
+    background-image: linear-gradient(to top right, rgb(255, 255, 255), rgb(230, 230, 230));
+    height: 100px;
+    width: 110%;
+    z-index: 10;
+    margin-left: -10px;
+    margin-top: -25px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.home {
+    position: relative;
+    font-family: 'Parkinsans';
+    font-size: 25px;
+    left: 75px;
+    color: black;
+    text-decoration: none;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+.shop {
+    position: relative;
+    font-family: 'Parkinsans';
+    font-size: 25px;
+    left: 125px;
+    color: black;
+    text-decoration: none;
+}
+
+.shop:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: relative;
+    top: 25px;
+    left: 70%;
+}
+
+.logo:hover {
+    animation: logoJump 1s ease-in-out infinite;
+}
+
+@keyframes logoJump {
+    0%, 100% { transform: translate(0%, 0%) translateY(0); }
+    50% { transform: translate(0%, -10%) translateY(-10px); }
 }
 
 .display {
-    background-color: rgb(1, 8, 0);
+    background-image: url(LettuceBackground.jpg);
+    background-position: 90%;
+    background-size: 110%;
     margin-left: -10px;
     position: relative;
-    top: 75px;
     height: 400px;
 }
 
 .banner {
     position: relative;
     transform: translate(-50%, -50%);
+    filter: contrast(200%);
     filter: saturate(300%);
+    filter: brightness(50%);
+    animation: bobbing 2s ease-in-out infinite;
+    filter: hue-rotate(1deg);
     top: 50%;
     left: 50%;
+}
+
+@keyframes bobbing {
+    0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-20px); }
 }
 
 .phonehead {
     font-family: 'Parkinsans';
     position: relative;
-    top: 100px;
+    top: 50px;
     font-size: 100px;
     text-align: center;
 }
@@ -30,7 +92,7 @@ body {
     font-family: 'Parkinsans';
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 30px;
     font-size: 30px;
     padding: 75px;
 }
